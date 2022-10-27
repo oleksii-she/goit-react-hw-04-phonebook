@@ -1,6 +1,5 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field } from 'formik';
 
-import { React, useState } from 'react';
 import { nanoid } from 'nanoid';
 import { Label, Button } from './form.styled';
 
