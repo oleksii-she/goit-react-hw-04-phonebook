@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const FormStyle = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`;
-
 export const Label = styled.label`
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
-import { Form } from './form/form';
+import { FormData } from './form/form';
 import { Filter } from './filter/Filter';
 import { ContactsList } from './contacts/contactsList';
 import { Conteiner } from './conteiner.styled';
@@ -19,7 +19,7 @@ export const App = () => {
 
   const [filter, setFilter] = useState('');
 
-  const getFormData = ({ number, name }) => {
+  const getFormData = (name, number) => {
     const contact = {
       id: nanoid(),
       name,
@@ -54,7 +54,7 @@ export const App = () => {
   return (
     <Conteiner>
       <h1>Phonebook</h1>
-      <Form onSubmit={getFormData} />
+      <FormData onSubmit={getFormData} />
 
       <h2>Contacts</h2>
       <Filter onChange={filterName} />
